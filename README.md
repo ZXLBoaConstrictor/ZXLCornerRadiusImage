@@ -8,11 +8,11 @@ ZXLCornerRadiusImage 是解决 UIImageView 设置圆角产生FPS过低问题。
 IOS 8.4 系统对比，目前我使用xcode 10.1 测试FPS时崩溃，不过感觉使用很流畅。
 IOS 9.0 没有测试手机。
 IOS 10.3.3系统对比 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190131115437245.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NreV9sb25nX2ZseQ==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190131115437245.png)
 IOS 11.1.2 对比
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190131134328157.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NreV9sb25nX2ZseQ==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190131134328157.png)
 IOS 12.1.3对比
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190131134826393.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NreV9sb25nX2ZseQ==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190131134826393.png)
 
 通过优化前后对比可以看出，imageView.layer.cornerRadius 、 imageView.layer.masksToBounds 对系统版本FPS影响随着版本越高影响也就越小。如果你的App要兼容IOS10以及其以下版本不妨可以考虑以下使用我优化过的代码。
 # 使用说明
@@ -47,5 +47,4 @@ IOS 12.1.3对比
             imageView.borderWidth = 1;
             imageView.roundingCorners = UIRectCornerTopLeft | UIRectCornerTopRight;
 ```
-
 
